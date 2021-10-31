@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "timerw.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,7 +17,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_timer_clicked();
+
 private:
     Ui::MainWindow *ui;
+    TimerW *timers = new TimerW;
+
+
+
 };
 #endif // MAINWINDOW_H
