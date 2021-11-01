@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "timerw.h"
+#include "ring.h"
+
 
 
 QT_BEGIN_NAMESPACE
@@ -19,10 +21,12 @@ public:
 
 private slots:
     void on_timer_clicked();
+    void call_ring();
 
 private:
     Ui::MainWindow *ui;
     TimerW *timers = new TimerW;
+    Ring general_ring;
 
 
 

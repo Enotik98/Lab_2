@@ -16,8 +16,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>90</y>
+     <x>70</x>
+     <y>80</y>
      <width>271</width>
      <height>81</height>
     </rect>
@@ -45,17 +45,17 @@
   <widget class="QWidget" name="horizontalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>200</y>
-     <width>271</width>
-     <height>141</height>
+     <x>70</x>
+     <y>180</y>
+     <width>431</width>
+     <height>221</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
      <widget class="QListWidget" name="list_of_timers">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -65,6 +65,13 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
+       <widget class="QPushButton" name="add_new_timer">
+        <property name="text">
+         <string>Add timer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="delete_timer">
         <property name="text">
          <string>Delete</string>
@@ -72,9 +79,23 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="pause_continue_timer">
         <property name="text">
-         <string>PushButton</string>
+         <string>Pause</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AddRepeatCount">
+        <property name="text">
+         <string>Add Repeat</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SubstructRepeatCount">
+        <property name="text">
+         <string>Substruct Repeat</string>
         </property>
        </widget>
       </item>
