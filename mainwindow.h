@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "timerw.h"
+#include "alarmw.h"
 #include "ring.h"
 
 
@@ -23,9 +24,14 @@ private slots:
     void on_timer_clicked();
     void call_ring();
 
+    void on_alarm_clicked();
+
+//    void on_not_disturb_stateChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
     TimerW *timers = new TimerW;
+    AlarmW *alarms = new AlarmW;
     Ring general_ring;
 
 

@@ -2,6 +2,9 @@
 #define RING_H
 
 #include <QDialog>
+#include <QDir>
+#include <QFileDialog>
+#include <QMediaPlayer>
 
 
 namespace Ui {
@@ -16,7 +19,14 @@ public:
     explicit Ring(QWidget *parent = nullptr);
     ~Ring();
 
+    QMediaPlayer player;
+    QFileDialog file_dialog;
+
     void call();
+    void close_event(QCloseEvent *event);
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Ring *ui;
 };
