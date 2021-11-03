@@ -6,114 +6,120 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>637</width>
-    <height>374</height>
+    <width>672</width>
+    <height>340</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QListWidget" name="list_of_alarms">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>140</y>
-     <width>231</width>
-     <height>161</height>
-    </rect>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>50</number>
    </property>
-  </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>250</x>
-     <y>150</y>
-     <width>121</width>
-     <height>141</height>
-    </rect>
+   <property name="topMargin">
+    <number>25</number>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QPushButton" name="add_new_alarm">
-      <property name="text">
-       <string>Add Alarm</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="on_off_alarm">
-      <property name="text">
-       <string>On</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="delete_alarm">
-      <property name="text">
-       <string>Delete</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QListWidget" name="weekday">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>140</y>
-     <width>131</width>
-     <height>161</height>
-    </rect>
+   <property name="rightMargin">
+    <number>50</number>
    </property>
-  </widget>
-  <widget class="QComboBox" name="filtr_box">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>60</y>
-     <width>91</width>
-     <height>32</height>
-    </rect>
+   <property name="bottomMargin">
+    <number>20</number>
    </property>
-   <item>
-    <property name="text">
-     <string>All</string>
-    </property>
+   <property name="horizontalSpacing">
+    <number>20</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>25</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLineEdit" name="Edit_for_subname"/>
    </item>
-   <item>
-    <property name="text">
-     <string>Subname</string>
-    </property>
+   <item row="1" column="0" colspan="2">
+    <widget class="QListWidget" name="list_of_alarms"/>
    </item>
-   <item>
-    <property name="text">
-     <string>Turn On</string>
-    </property>
+   <item row="1" column="2" colspan="2">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="add_new_alarm">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Add Alarm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="on_off_alarm">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>On</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delete_alarm">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
-  </widget>
-  <widget class="QLineEdit" name="Edit_for_subname">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>121</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="complement_box">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>60</y>
-     <width>86</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Complement</string>
-   </property>
-  </widget>
+   <item row="1" column="4">
+    <widget class="QListWidget" name="weekday"/>
+   </item>
+   <item row="0" column="4">
+    <widget class="QCheckBox" name="complement_box">
+     <property name="text">
+      <string>Complement</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QComboBox" name="filtr_box">
+     <item>
+      <property name="text">
+       <string>All</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Subname</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Turn On</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

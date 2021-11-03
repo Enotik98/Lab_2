@@ -19,6 +19,7 @@ Ring::~Ring()
 }
 void Ring::call(){
     show();
+    this->setWindowTitle("Ring");
     ui->label->setText("Time Out!");
 
     player.play();

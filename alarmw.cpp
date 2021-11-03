@@ -49,10 +49,10 @@ QString AlarmW::time_to(QDateTime time){
     QTime tmpl;
     tmpl.setHMS(0, 0, 0);
     tmpl = tmpl.addSecs(sec%86400);
-    return QString::number(sec/8640)+":"+tmpl.toString("hh:mm:ss");
+    return QString::number(sec/86400)+':'+tmpl.toString("hh:mm:ss");
 }
 QString for_write(Element_Alarm *element, int i){
-    QString s = QString::number(i+1)+" ";
+    QString s = QString::number(i+1)+") ";
     s = s + element->name;
     s = s + element->time.toString(" h:mm ");
     QDateTime mom;
